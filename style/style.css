@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vh;
+    background-color: black;
+}
+
+body{
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    /* background-size: cover; serve para cobrir a tela inteira */
+}
+main {
+    position: relative;
+    height: 100vh;
+}
+
+#celular {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* o transform foi usado, pois o css considera sempre o canto esquerdo superior do bloco como o ponto de referência, então o bloco não fica centralizado */
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+    /* no-repeat é utilizado para não duplicar a imagem */
+}
